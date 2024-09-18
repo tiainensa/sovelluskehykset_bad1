@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 18, 2024 at 03:15 PM
+-- Generation Time: Sep 18, 2024 at 03:50 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `sovelluskehykset_bad1`
 --
-CREATE DATABASE IF NOT EXISTS `sovelluskehykset_bad1` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+CREATE DATABASE IF NOT EXISTS `sovelluskehykset_bad1` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `sovelluskehykset_bad1`;
 
 -- --------------------------------------------------------
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `name` varchar(255) NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `products`
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   `make` varchar(255) NOT NULL,
   `model` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `vehicles`
